@@ -7,7 +7,7 @@ class NotesBody extends Component {
     
     state = {
         columns : [
-        {path: 'title', label: "TITLE"},  
+        {path: 'title', label: "TITLE", content: note => <Link to={`/notes/${note._id}`}> {note.title}</Link>  },  
           {path: 'publishDate', label: "PUBLISH DATE" },
           {path: 'authors.name', label: "AUTHOR"},      
           {path: 'source', label: "SOURCE"},

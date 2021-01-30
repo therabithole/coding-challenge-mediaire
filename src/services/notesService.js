@@ -3,7 +3,7 @@ import * as authorsAPI from "./authorService";
 const notes = [
   {
     _id: "5b21ca3eeb7f6fbccd471815",
-    title: "This is a news story",
+    title: "Gamestonk and the case for investor caution",
     authors:  { _id: "5b21ca3eeb7f6fbccd471818", name: "Max Mustermann" },
     source: "Reuters",  
     publishDate: "2019-02-17",
@@ -11,14 +11,14 @@ const notes = [
   },
   {
     _id: "5b21ca3eeb7f6fbccd471816",
-    title: "This is a news story",
+    title: "UK says it expects no vaccine interruption from EU; Brussels admits Irish 'blunder'",
     authors:  { _id: "5b21ca3eeb7f6fbccd471814", name: "Jane Doe" },
     source: "Reuters",  
     publishDate: "2019-02-17",
   },
   {
     _id: "5b21ca3eeb7f6fbccd471817",
-    title: "yhis is a news story",
+    title: "Putin's former judo partner says he owns palace which opposition links to Russian leader",
     authors:  { _id: "5b21ca3eeb7f6fbccd471820", name: "John Doe" },
     source: "Reuters",  
     publishDate: "2019-02-17",
@@ -26,7 +26,7 @@ const notes = [
   },
   {
     _id: "5b21ca3eeb7f6fbccd471819",
-    title: "Ehis is a news story",
+    title: "Germany is already ordering vaccines for 2022, minister says",
     authors:  { _id: "5b21ca3eeb7f6fbccd471818", name: "Max Mustermann" },
     source: "Reuters",  
     publishDate: "2019-02-17",
@@ -34,7 +34,7 @@ const notes = [
   },
   {
     _id: "5b21ca3eeb7f6fbccd47181a",
-    title: "This is a news story",
+    title: "Robinhood, Reddit protected from lawsuits",
     authors:  { _id: "5b21ca3eeb7f6fbccd471818", name: "Max Mustermann" },
     source: "Reuters",  
     publishDate: "2019-02-17",

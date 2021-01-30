@@ -53,7 +53,8 @@ getPageData = () => {
     
     let filtered = allNotes;
     if(searchQuery) {
-       filtered = allNotes.filter(note => note.title.toLowerCase().startsWith(searchQuery.toLowerCase()))
+        
+       filtered = allNotes.filter(note => note.title.toLowerCase().includes(searchQuery.toLowerCase()))
     } else if (selectedItem && selectedItem._id) {
         filtered = allNotes.filter( note => note.authors._id === selectedItem._id)
     }
