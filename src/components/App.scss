@@ -1,0 +1,49 @@
+body {
+    background-color: #e5e5e5 !important;
+}
+
+.myApp {
+    display: grid;
+    grid-template-rows: 10vh 1fr;
+    grid-template-areas: "header " "allContent";
+}
+
+.logo-and-nav {
+    ul {
+        list-style: none;
+        li {
+            a {
+                .siteLogo {
+                    height: 10vh;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    display: grid;
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vw;
+    grid-template-areas:
+        ". . searchArea ."
+        " . filter products .";
+
+    .searchArea {
+        grid-area: searchArea;
+    }
+
+    .filter {
+        grid-area: filter;
+
+        width: 80%;
+
+        height: max-content;
+        li {
+        }
+    }
+
+    .products {
+        grid-area: products;
+    }
+}

@@ -24,7 +24,10 @@ class Notes extends Component {
 
 componentDidMount() {
     
-    this.setState({notes: getNotes(), authors: getAuthors()})
+    const authors = [{_id: '', name: "All Authors"}, ...getAuthors()]
+    this.setState({notes: getNotes(), authors: authors})
+
+    
 
     
 }
@@ -77,7 +80,7 @@ getPageData = () => {
 const {data: sortedNotes} = this.getPageData();
 
         return ( 
-        <section className="content notes">
+        <section className="content">
    
         <Filter
         items={this.state.authors}
@@ -86,13 +89,13 @@ const {data: sortedNotes} = this.getPageData();
         textProperty="name"
         idProperty="_id"
         />
-            <section className="header">
+            <section className="searchArea">
             <SearchNotes value={searchQuery} 
             onChange={this.handleSearch}/>
            
 </section>
   
-            <section className="products note">
+            <section className="products">
            
               <NotesBody 
               notes ={sortedNotes}

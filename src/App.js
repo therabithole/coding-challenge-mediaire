@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="myApp">
     <Navigation/>   
     <Route path ="/" component={Notes}/>
     </div>

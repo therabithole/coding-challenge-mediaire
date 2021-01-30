@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import {Link } from "react-router-dom";
+import Logo from "./Logo"
+import "./App.css"
 
 class Navigation extends Component {
   state = {  }
   render() { 
     return (  <section className="header">
-    <section className="logo">  </section> 
  
-     <section className="navigation">
+     <section className="logo-and-nav">
        <ul>
-         <li><Link to="/"> Home Page </Link ></li>
+         <li><Link to="/"> <Logo/> </Link ></li>
         
         
        </ul>

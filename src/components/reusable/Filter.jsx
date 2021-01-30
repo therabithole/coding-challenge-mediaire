@@ -6,7 +6,9 @@ const Sidebar = (props) => {
     const {items, textProperty, idProperty, onItemSelect, selectedItem, } = props;
    
     
-    return ( <React.Fragment> <ul className="list-group">
+    return ( <React.Fragment>
+         <ul className="list-group filter">
+         <h5> FILTER BY AUTHOR </h5>
             {items.map(item=> 
                 <li onClick={()=> onItemSelect(item)} key={item[idProperty]}
             className={item === selectedItem ? "list-group-item active" : "list-group-item"}>{item[textProperty]}

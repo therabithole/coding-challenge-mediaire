@@ -1,0 +1,50 @@
+body {
+  background-color: #e5e5e5 !important;
+}
+
+.myApp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10vh 1fr;
+      grid-template-rows: 10vh 1fr;
+      grid-template-areas: "header " "allContent";
+}
+
+.logo-and-nav ul {
+  list-style: none;
+}
+
+.logo-and-nav ul li a .siteLogo {
+  height: 10vh;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2vh;
+  grid-column-gap: 2vw;
+      grid-template-areas: ". . searchArea ." " . filter products .";
+}
+
+.content .searchArea {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: searchArea;
+}
+
+.content .filter {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: filter;
+  width: 80%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.content .products {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: products;
+}
+/*# sourceMappingURL=App.css.map */
